@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contáctenos - Hiroshi Co.</title>
+    <title>Hiroshi Co. - Contáctenos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffe5ec; /* Fondo rosa claro */
+            background-color: #ffe5ec;
         }
         header {
             background-color: #ff6fa9;
@@ -17,17 +17,21 @@
             padding: 20px;
             text-align: center;
         }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         main {
             margin: 20px;
             padding: 20px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        form {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
         }
         form input, form textarea, form button {
             margin: 10px 0;
@@ -57,12 +61,17 @@
 </head>
 <body>
     <header>
-        <h1>Contáctenos</h1>
-        <p>¡Estamos aquí para ayudarte!</p>
+        <h1>Hiroshi Co.</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="voicebanks.html">Nuestros Voicebanks</a>
+            <a href="contactenos.html">Contáctenos</a>
+        </nav>
     </header>
     <main>
-        <h2>Formulario de Contacto</h2>
-        <form action="alejandrotocaboca2015@gmail.com" method="post" enctype="text/plain">
+        <h2>Contáctenos</h2>
+        <p>Estamos aquí para ayudarte con tus dudas o sugerencias.</p>
+        <form action="mailto:info@hiroshico.com" method="post" enctype="text/plain">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
             <label for="email">Correo Electrónico:</label>
