@@ -26,12 +26,15 @@
         nav a:hover {
             text-decoration: underline;
         }
-        section {
+        main {
             margin: 20px;
             padding: 20px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
         }
         .vocaloid-card {
             border: 1px solid #ff6fa9;
@@ -39,6 +42,19 @@
             margin: 10px 0;
             border-radius: 5px;
             background-color: #fff0f5;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #ff6fa9;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff4d88;
         }
         footer {
             text-align: center;
@@ -60,21 +76,26 @@
             <a href="contactenos.html">Contáctenos</a>
         </nav>
     </header>
-    <section>
-        <h2>Nuestros Voicebanks</h2>
-        <p>Descubre los voicebanks únicos que hemos creado.</p>
-        <div class="vocaloid-card">
-            <h3>Nombre del Vocaloid</h3>
-            <p>Descripción breve del voicebank.</p>
-            <audio controls>
-                <source src="demo.mp3" type="audio/mpeg">
-                Tu navegador no soporta la reproducción de audio.
-            </audio>
-            <br>
-            <a href="descarga.zip" download>Descargar</a>
-        </div>
-        <!-- Añade más tarjetas duplicando este bloque -->
-    </section>
+    <main>
+        <section>
+            <h2>Nuestros Voicebanks</h2>
+            <p>Descubre y descarga nuestros voicebanks directamente desde GitHub.</p>
+            <div class="vocaloid-card">
+                <h3>Voicebank 1</h3>
+                <p>Descripción breve del voicebank 1.</p>
+                <a href="https://github.com/TUUSUARIO/NOMBREDELREPOSITORIO/blob/main/voicebank1.zip" download>
+                    <button>Descargar Voicebank 1</button>
+                </a>
+            </div>
+            <div class="vocaloid-card">
+                <h3>Voicebank 2</h3>
+                <p>Descripción breve del voicebank 2.</p>
+                <a href="https://github.com/TUUSUARIO/NOMBREDELREPOSITORIO/blob/main/voicebank2.zip" download>
+                    <button>Descargar Voicebank 2</button>
+                </a>
+            </div>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2025 Hiroshi Co. | Creado por Alejandro</p>
     </footer>
