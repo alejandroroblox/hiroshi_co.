@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiroshi Co.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe5ec; /* Fondo rosa claro */
+        }
+        header {
+            background-color: #ff6fa9; /* Rosa vibrante */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff6fa9; /* Rosa vibrante */
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .vocaloid-card {
+            border: 1px solid #ff6fa9; /* Borde rosa vibrante */
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background-color: #fff0f5; /* Fondo rosa claro */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a Hiroshi Co.</h1>
+    <p>Explora y descarga nuestros voicebanks exclusivos</p>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#voicebanks">Nuestros Voicebanks</a>
+        <a href="#contacto">Contáctanos</a>
+    </nav>
+</header>
+
+<main>
+    <section id="voicebanks">
+        <h2>Nuestros Voicebanks</h2>
+        <div class="vocaloid-card">
+            <h3>Nombre del Vocaloid</h3>
+            <p>Descripción breve del voicebank.</p>
+            <audio controls>
+                <source src="demo.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+            <br>
+            <a href="descarga.zip" download>Descargar</a>
+        </div>
+        <!-- Duplica esta sección por cada Vocaloid nuevo -->
+    </section>
+</main>
+
+<footer id="contacto">
+    <p>&copy; 2025 Voicebank Vocaloid6 | Creado con amor por Alejandro</p>
+    <p>Contáctanos: <a href="mailto:info@voicebankvocaloid6.com">info@voicebankvocaloid6.com</a></p>
+</footer>
+
+</body>
+</html>
