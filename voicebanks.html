@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiroshi Co. - Nuestros Voicebanks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe5ec;
+        }
+        header {
+            background-color: #ff6fa9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .vocaloid-card {
+            border: 1px solid #ff6fa9;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background-color: #fff0f5;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff6fa9;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hiroshi Co.</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="voicebanks.html">Nuestros Voicebanks</a>
+            <a href="contactenos.html">Contáctenos</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Nuestros Voicebanks</h2>
+        <p>Descubre los voicebanks únicos que hemos creado.</p>
+        <div class="vocaloid-card">
+            <h3>Nombre del Vocaloid</h3>
+            <p>Descripción breve del voicebank.</p>
+            <audio controls>
+                <source src="demo.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+            <br>
+            <a href="descarga.zip" download>Descargar</a>
+        </div>
+        <!-- Añade más tarjetas duplicando este bloque -->
+    </section>
+    <footer>
+        <p>&copy; 2025 Hiroshi Co. | Creado por Alejandro</p>
+    </footer>
+</body>
+</html>
